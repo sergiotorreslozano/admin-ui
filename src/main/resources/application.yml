@@ -1,2 +1,12 @@
 server:
   port: 7070
+
+management:
+  server:
+    port: 10090
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+    health:
+      show-details: always
